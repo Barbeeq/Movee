@@ -1,0 +1,101 @@
+.autopark
+    padding: 35px 0 46px 0
+    .title
+        text-align: center
+        font-size: 30px
+    &__title
+        text-align: left
+        font-size: 24px
+        font-weight: 700    
+    .subheader
+        margin-top: 15px
+        color: $second-color
+        font-weight: 700
+        font-size: 24px
+        line-height: 1    
+        text-align: center
+    &__tabs
+        margin-top: 60px
+        display: flex
+        list-style: none
+        justify-content: center
+        margin-bottom: 0
+        padding-left: 0    
+    &__tab
+        display: flex
+        width: 200px
+        height: 50px   
+        border: 1px solid #EBEBEB
+        font-size: 20px
+        color: $second-color
+        font-weight: 500
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        transition: 0.5s all
+        &:not(:last-child)
+            margin-right: 19px
+        &:hover
+            background-color: $main-color
+            color: #FFF
+        &_active
+            border: 1px solid #FED100
+    &__wrapper
+        margin-top: 47px
+        display: none
+        min-width: 0
+        min-height: 200px
+        &_active
+            display: flex
+            min-width: 0
+    &__slide
+        display: flex
+        align-items: center
+        justify-content: center
+        min-width: 0
+    &__list
+        margin-top: 37px
+        list-style-type: none 
+        margin-bottom: 0
+        padding-left: 0
+        text-align: left
+    &__item
+        margin-top: 28px
+        font-weight: 300
+        font-size: 16px
+        padding-left: 30px
+        background-image: url(../icons/checkIcon.svg)
+        background-repeat: no-repeat
+        background-position: left center
+    &__catalog
+         margin-right: 100px  
+
+    .button
+        margin-top: 35px 
+
+    .swiper-button-prev::after
+        font-size: 17px
+        color: $second-color
+        font-weight: 900   
+       
+    .swiper-button-next::after    
+        font-size: 17px  
+        color: $second-color
+        font-weight: 900 
+       
+    .swiper-button-prev    
+         left: 30px
+    .swiper-button-next
+        right: 50px  
+    .swiper-pagination-bullet
+        background-color: $second-color
+        width: 8px
+        height: 8px
+    .swiper-pagination-bullet-active
+        border: 2px solid $main-color
+        width: 10px
+        height: 10px
+    .swiper-pagination
+        bottom: 0   
+         
+             

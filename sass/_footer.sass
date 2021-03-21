@@ -1,0 +1,81 @@
+.footer
+    padding: 100px 0 102px 0
+    background-color: $main-color
+    .title
+        text-align: left
+        a
+            color: $second-color
+            font-weight: 700
+            font-size: 30px
+            text-decoration: none
+            line-height: 1
+            &:hover
+                text-decoration: underline
+                color: $second-color
+    &__info
+        display: flex   
+        justify-content: space-between        
+    &__privacy
+        display: flex
+        flex-direction: column
+        max-width: 238px
+    &__policy
+        margin-top: 44px
+        color: $second-color
+        font-weight: 500
+        font-size: 16px
+        &:hover
+            color: $second-color
+    &__list
+        list-style: none
+        margin-bottom: 0
+        padding-inline-start:0
+    &__item
+        margin-top: 15px
+        &:first-child
+            margin-top: 0
+        a
+            color: $second-color
+            font-weight: 500
+            font-size: 20px
+            &:hover
+                color: $second-color
+    &__icons
+        display: flex
+        margin-bottom: 20px
+    &__icon
+        cursor: pointer
+        margin-right: 30px
+        img
+            transition: 1s all 
+            &:hover
+                transform: rotate(360deg)
+        &:last-child
+            margin-right: 0
+           
+    &__email
+        font-size: 20px
+        font-weight: 500
+        color: $second-color
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+            color: $second-color
+    &__contacts
+        display: flex
+        flex-direction: column
+        .button_footer
+            display: none
+    &__phone
+        font-size: 20px
+        font-weight: 500
+        color: $second-color
+        text-decoration: underline
+        text-align: center
+        &:hover
+            color: $second-color
+            text-decoration: none
+            
+
+
+                        

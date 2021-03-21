@@ -1,0 +1,71 @@
+.overlay
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    background-color: rgba(0,0 ,0 ,.56)
+    z-index: 5
+.modal
+    position: absolute 
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 380px
+    min-height: 370px
+    background-color: #fff
+    padding: 38px 40px 40px 40px
+    &__close
+        position: absolute
+        top: 0
+        right: -40px
+        font-size: 50px
+        line-height: 17px
+        color: $main-color
+        cursor: pointer
+        transform: skewX(6deg)
+    &__subtitle
+        text-align: center
+        font-weight: 700
+        color: $second-color
+        font-size: 18px
+    &__descr
+        margin-top: 10px
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+        color: $second-color
+    .error
+        border: 1px solid $main-color
+    label.error
+        border: none
+        text-align: center
+        margin-top: 15px
+        margin-bottom: 0
+        font-weight: 500  
+    &_reviews
+        width: 500px
+        min-height: 355px
+        padding-bottom: 20px
+.swiper-scrollbar-drag
+    background-color: rgba(254,209,0,1)
+.swiper-container-horizontal
+    .swiper-pagination-bullets
+        bottom: -6px    
+    .prices__title
+        margin-top: 0
+    .prices__descr
+        margin-top: 30px    
+    .button_main
+        display: block
+        margin: 0 auto 
+        margin-top: 20px 
+    .prices__price
+        margin-top: 20px 
+
+
+#buy, #order, .modal_reviews, #modal_prices
+    display: none  
+
+  
+     

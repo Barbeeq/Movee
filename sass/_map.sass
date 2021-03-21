@@ -1,0 +1,64 @@
+.map
+    height: 666px
+    position: relative
+    
+    #wrapMap 
+        position: relative
+        cursor: help
+        overflow: hidden
+
+    .mapTitle 
+        position: absolute
+        z-index: 1000
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px
+        display: none
+        padding: 5px 20px
+        border-radius: 2px
+        background: rgb(255, 255, 255)
+        border-color: rgb(204, 204, 204)
+    &__info
+        padding: 40px 35px 40px 35px
+        height: 326px
+        width: 368px
+        background-color: #fff
+        position: absolute  
+        top: 50%
+        transform: translateY(-50%)
+        left: calc( 45% - 368px )
+    &__title
+        color: $second-color
+        font-weight: 700
+        font-size: 30px
+        text-decoration: none
+        line-height: 1  
+    &__list
+        margin-top: 40px
+        list-style: none 
+        margin-bottom: 0
+        padding-left: 0
+        
+    &__item
+        margin-top: 20px
+        padding-left: 30px
+        background-image: url(../icons/checkIcon_yellow.svg)
+        background-repeat: no-repeat
+        background-position: left center        
+        font-weight: 300
+        font-size: 16px
+        &:nth-child(3)
+            text-decoration: underline
+            
+    &__icons
+        text-align: right
+        margin-top: 54px  
+    &__icon
+        margin-right: 25px
+        img
+            transition: 1s all 
+            &:hover
+                transform: rotate(360deg)
+        &:last-child
+            margin-right: 0
+    &__block
+        display: none            
+              
